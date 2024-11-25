@@ -24,6 +24,7 @@ Partial Class Form1
     Private Sub InitializeComponent()
         btnStart = New Button()
         varLesson = New Button()
+        Button1 = New Button()
         SuspendLayout()
         ' 
         ' btnStart
@@ -46,11 +47,21 @@ Partial Class Form1
         varLesson.Text = "Var Lesson"
         varLesson.UseVisualStyleBackColor = True
         ' 
+        ' Button1
+        ' 
+        Button1.Location = New Point(309, 224)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(138, 52)
+        Button1.TabIndex = 2
+        Button1.Text = "btnVarTypes"
+        Button1.UseVisualStyleBackColor = True
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(Button1)
         Controls.Add(varLesson)
         Controls.Add(btnStart)
         Name = "Form1"
@@ -60,5 +71,6 @@ Partial Class Form1
 
     Friend WithEvents btnStart As Button
     Friend WithEvents varLesson As Button
+    Friend WithEvents Button1 As Button
 
 End Class
