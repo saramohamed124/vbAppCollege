@@ -54,4 +54,45 @@
                isEngineSize & vbNewLine & decPrice & vbNewLine & dtDataRegistered)
 
     End Sub
+
+
+
+
+    Private Sub txtFirstName_TextChanged(sender As Object, e As EventArgs) Handles txtFirstName.TextChanged
+
+    End Sub
+
+    Private Sub txtLastName_TextChanged(sender As Object, e As EventArgs) Handles txtLastName.TextChanged
+
+    End Sub
+
+    Private Sub txtGender_TextChanged(sender As Object, e As EventArgs) Handles txtGender.TextChanged
+
+    End Sub
+
+    Private Sub inputLesson_Click(sender As Object, e As EventArgs) Handles inputLesson.Click
+        Dim strFirstName As String
+        strFirstName = InputBox("Please Enter Your First Name: ")
+        MsgBox("Hello, " & strFirstName)
+    End Sub
+
+    Private Sub btnGo_Click(sender As Object, e As EventArgs) Handles btnGo.Click
+        Dim strFirstName As String
+        Dim strLastName As String
+        Dim strGender As String
+        Dim strOccupation As String
+
+        strFirstName = txtFirstName.Text
+        strLastName = txtLastName.Text
+        strGender = txtGender.Text
+        strOccupation = lsOccupation.Text
+
+        MsgBox("Hello, " & strFirstName & " " & strLastName & " Your are " & strGender & " Your Occupation is " & strOccupation)
+    End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        lsOccupation.Items.Add("Writer")
+        lsOccupation.Items.Add("Actor")
+        lsOccupation.Items.Add("Painter")
+    End Sub
 End Class
