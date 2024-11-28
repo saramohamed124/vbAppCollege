@@ -35,6 +35,11 @@ Partial Class Form1
         btnGo = New Button()
         lsOccupation = New ListBox()
         Label3 = New Label()
+        labelNumberOne = New Label()
+        labelNumberTwo = New Label()
+        TextBox1 = New TextBox()
+        TextBox2 = New TextBox()
+        btnCalc = New Button()
         SuspendLayout()
         ' 
         ' btnStart
@@ -154,11 +159,58 @@ Partial Class Form1
         Label3.TabIndex = 7
         Label3.Text = "Occupation"
         ' 
+        ' labelNumberOne
+        ' 
+        labelNumberOne.AutoSize = True
+        labelNumberOne.Location = New Point(116, 302)
+        labelNumberOne.Name = "labelNumberOne"
+        labelNumberOne.Size = New Size(60, 15)
+        labelNumberOne.TabIndex = 8
+        labelNumberOne.Text = "Number 1"
+        ' 
+        ' labelNumberTwo
+        ' 
+        labelNumberTwo.AutoSize = True
+        labelNumberTwo.Location = New Point(116, 332)
+        labelNumberTwo.Name = "labelNumberTwo"
+        labelNumberTwo.Size = New Size(60, 15)
+        labelNumberTwo.TabIndex = 9
+        labelNumberTwo.Text = "Number 2"
+        ' 
+        ' TextBox1
+        ' 
+        TextBox1.Location = New Point(187, 298)
+        TextBox1.Multiline = True
+        TextBox1.Name = "TextBox1"
+        TextBox1.Size = New Size(100, 23)
+        TextBox1.TabIndex = 10
+        ' 
+        ' TextBox2
+        ' 
+        TextBox2.Location = New Point(187, 328)
+        TextBox2.Name = "TextBox2"
+        TextBox2.Size = New Size(100, 23)
+        TextBox2.TabIndex = 11
+        ' 
+        ' btnCalc
+        ' 
+        btnCalc.Location = New Point(308, 328)
+        btnCalc.Name = "btnCalc"
+        btnCalc.Size = New Size(75, 23)
+        btnCalc.TabIndex = 12
+        btnCalc.Text = "Calculate"
+        btnCalc.UseVisualStyleBackColor = True
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(btnCalc)
+        Controls.Add(TextBox2)
+        Controls.Add(TextBox1)
+        Controls.Add(labelNumberTwo)
+        Controls.Add(labelNumberOne)
         Controls.Add(Label3)
         Controls.Add(lsOccupation)
         Controls.Add(txtGenderLabel)
@@ -191,5 +243,10 @@ Partial Class Form1
     Friend WithEvents btnGo As Button
     Friend WithEvents lsOccupation As ListBox
     Friend WithEvents Label3 As Label
+    Friend WithEvents labelNumberOne As Label
+    Friend WithEvents labelNumberTwo As Label
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents btnCalc As Button
 
 End Class

@@ -95,4 +95,53 @@
         lsOccupation.Items.Add("Actor")
         lsOccupation.Items.Add("Painter")
     End Sub
+
+
+
+    Private Sub btnCalc_Click(sender As Object, e As EventArgs) Handles btnCalc.Click
+        'Declare Variable
+        Dim iNumberOne As Double
+        Dim iNumberTwo As Double
+        Dim iResult As Double
+
+
+        iNumberOne = TextBox1.Text
+        iNumberTwo = TextBox2.Text
+
+        iResult = iNumberOne + iNumberTwo
+
+        'Summision
+        MsgBox(iResult)
+
+        'Substract
+        iResult = iNumberOne - iNumberTwo
+
+        MsgBox(iResult)
+
+        'Multiply => using asterisk
+        iResult = iNumberOne * iNumberTwo
+
+        MsgBox(iResult)
+
+        'Division
+        iResult = iNumberOne / iNumberTwo
+
+        MsgBox(iResult)
+
+        'Power
+        iResult = iNumberOne ^ iNumberTwo
+
+        MsgBox(iResult)
+
+        'Division => return int number only
+        iResult = iNumberOne \ iNumberTwo
+
+        MsgBox(iResult)
+
+        'Mod => remainder after the whole number divison
+        iResult = iNumberOne Mod iNumberTwo
+
+        MsgBox(iResult)
+    End Sub
+
 End Class
