@@ -40,6 +40,7 @@ Partial Class Form1
         TextBox1 = New TextBox()
         TextBox2 = New TextBox()
         btnCalc = New Button()
+        btnCalcCake = New Button()
         SuspendLayout()
         ' 
         ' btnStart
@@ -201,11 +202,21 @@ Partial Class Form1
         btnCalc.Text = "Calculate"
         btnCalc.UseVisualStyleBackColor = True
         ' 
+        ' btnCalcCake
+        ' 
+        btnCalcCake.Location = New Point(454, 284)
+        btnCalcCake.Name = "btnCalcCake"
+        btnCalcCake.Size = New Size(75, 23)
+        btnCalcCake.TabIndex = 13
+        btnCalcCake.Text = "CalcCake"
+        btnCalcCake.UseVisualStyleBackColor = True
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(btnCalcCake)
         Controls.Add(btnCalc)
         Controls.Add(TextBox2)
         Controls.Add(TextBox1)
@@ -248,5 +259,6 @@ Partial Class Form1
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents btnCalc As Button
+    Friend WithEvents btnCalcCake As Button
 
 End Class

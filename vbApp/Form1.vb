@@ -142,6 +142,28 @@
         iResult = iNumberOne Mod iNumberTwo
 
         MsgBox(iResult)
+
+
     End Sub
 
+    Private Sub btnCalcCake_Click(sender As Object, e As EventArgs) Handles btnCalcCake.Click
+
+        'Declare Variables
+        Dim decPrice As Decimal
+        Dim iQuantity As Integer
+        Dim decDiscount As Decimal
+        Dim decTotalCount As Decimal
+        Dim decPostage As Decimal
+
+        decPrice = 10
+        iQuantity = 5
+        decDiscount = 2
+        decPostage = 3
+
+        decTotalCount = ((decPrice - decDiscount) * iQuantity) + decPostage
+
+        'BO(DM)(AS) - Brackets Order (like as power) Division Multiplication Addition Substraction
+
+        MsgBox(decTotalCount)
+    End Sub
 End Class
