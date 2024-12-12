@@ -166,4 +166,38 @@
 
         MsgBox(decTotalCount)
     End Sub
+
+    Private Sub BtnGreeting_Click(sender As Object, e As EventArgs) Handles BtnGreeting.Click
+        'Declare A String Variable called stCountry
+        Dim strCountry As String
+        strCountry = txtCountry.Text
+        'strCountry = strCountry.ToUpper 'Turn strCountry to Upper Case Character (before condition)
+
+        'If strCountry = "Egypt" Then
+        '    MsgBox("Welcome, " & strCountry)
+        'ElseIf strCountry = "France" Then
+        '    MsgBox("Bonjor, " & strCountry)
+        'Else
+        '    MsgBox("Hello From Any Where")
+        'End If
+
+        'If strCountry = "EGYPT" Then
+        '    MsgBox("Welcome, " & strCountry)
+        'ElseIf strCountry = "FRANCE" Then
+        '    MsgBox("Bonjor, " & strCountry)
+        'Else
+        '    MsgBox("Hello From Any Where")
+        'End If
+
+        'Change strContry to Upper Case Characters while condition
+        If strCountry.ToUpper = "EGYPT" Then
+            MsgBox("Welcome, " & strCountry)
+        ElseIf strCountry.ToUpper = "FRANCE" Then
+            MsgBox("Bonjor, " & strCountry)
+        Else
+            MsgBox("Hello From Any Where")
+        End If
+
+    End Sub
+
 End Class

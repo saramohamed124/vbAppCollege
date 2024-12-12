@@ -41,6 +41,9 @@ Partial Class Form1
         TextBox2 = New TextBox()
         btnCalc = New Button()
         btnCalcCake = New Button()
+        stCountry = New Label()
+        txtCountry = New TextBox()
+        BtnGreeting = New Button()
         SuspendLayout()
         ' 
         ' btnStart
@@ -163,7 +166,7 @@ Partial Class Form1
         ' labelNumberOne
         ' 
         labelNumberOne.AutoSize = True
-        labelNumberOne.Location = New Point(116, 302)
+        labelNumberOne.Location = New Point(38, 252)
         labelNumberOne.Name = "labelNumberOne"
         labelNumberOne.Size = New Size(60, 15)
         labelNumberOne.TabIndex = 8
@@ -172,7 +175,7 @@ Partial Class Form1
         ' labelNumberTwo
         ' 
         labelNumberTwo.AutoSize = True
-        labelNumberTwo.Location = New Point(116, 332)
+        labelNumberTwo.Location = New Point(38, 282)
         labelNumberTwo.Name = "labelNumberTwo"
         labelNumberTwo.Size = New Size(60, 15)
         labelNumberTwo.TabIndex = 9
@@ -180,7 +183,7 @@ Partial Class Form1
         ' 
         ' TextBox1
         ' 
-        TextBox1.Location = New Point(187, 298)
+        TextBox1.Location = New Point(109, 248)
         TextBox1.Multiline = True
         TextBox1.Name = "TextBox1"
         TextBox1.Size = New Size(100, 23)
@@ -188,14 +191,14 @@ Partial Class Form1
         ' 
         ' TextBox2
         ' 
-        TextBox2.Location = New Point(187, 328)
+        TextBox2.Location = New Point(109, 278)
         TextBox2.Name = "TextBox2"
         TextBox2.Size = New Size(100, 23)
         TextBox2.TabIndex = 11
         ' 
         ' btnCalc
         ' 
-        btnCalc.Location = New Point(308, 328)
+        btnCalc.Location = New Point(230, 278)
         btnCalc.Name = "btnCalc"
         btnCalc.Size = New Size(75, 23)
         btnCalc.TabIndex = 12
@@ -204,12 +207,38 @@ Partial Class Form1
         ' 
         ' btnCalcCake
         ' 
-        btnCalcCake.Location = New Point(454, 284)
+        btnCalcCake.Location = New Point(12, 415)
         btnCalcCake.Name = "btnCalcCake"
         btnCalcCake.Size = New Size(75, 23)
         btnCalcCake.TabIndex = 13
         btnCalcCake.Text = "CalcCake"
         btnCalcCake.UseVisualStyleBackColor = True
+        ' 
+        ' stCountry
+        ' 
+        stCountry.AutoSize = True
+        stCountry.Location = New Point(12, 332)
+        stCountry.Name = "stCountry"
+        stCountry.Size = New Size(117, 15)
+        stCountry.TabIndex = 8
+        stCountry.Text = "Where are you from?"
+        ' 
+        ' txtCountry
+        ' 
+        txtCountry.Location = New Point(135, 328)
+        txtCountry.Multiline = True
+        txtCountry.Name = "txtCountry"
+        txtCountry.Size = New Size(142, 23)
+        txtCountry.TabIndex = 10
+        ' 
+        ' BtnGreeting
+        ' 
+        BtnGreeting.Location = New Point(297, 328)
+        BtnGreeting.Name = "BtnGreeting"
+        BtnGreeting.Size = New Size(85, 23)
+        BtnGreeting.TabIndex = 12
+        BtnGreeting.Text = "Greeting"
+        BtnGreeting.UseVisualStyleBackColor = True
         ' 
         ' Form1
         ' 
@@ -217,10 +246,13 @@ Partial Class Form1
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
         Controls.Add(btnCalcCake)
+        Controls.Add(BtnGreeting)
         Controls.Add(btnCalc)
         Controls.Add(TextBox2)
+        Controls.Add(txtCountry)
         Controls.Add(TextBox1)
         Controls.Add(labelNumberTwo)
+        Controls.Add(stCountry)
         Controls.Add(labelNumberOne)
         Controls.Add(Label3)
         Controls.Add(lsOccupation)
@@ -260,5 +292,8 @@ Partial Class Form1
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents btnCalc As Button
     Friend WithEvents btnCalcCake As Button
+    Friend WithEvents stCountry As Label
+    Friend WithEvents txtCountry As TextBox
+    Friend WithEvents BtnGreeting As Button
 
 End Class
